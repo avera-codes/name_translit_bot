@@ -1,0 +1,234 @@
+2024-05-14 12:38:03,145 - aiogram.dispatcher - INFO - Start polling
+2024-05-14 12:38:03,553 - aiogram.dispatcher - INFO - Run polling for bot @name_translit_bot id=6987896318 - 'Name Translit bot'
+2024-05-14 12:38:04,337 - aiogram.event - INFO - Update id=945620104 is handled. Duration 592 ms by bot id=6987896318
+2024-05-14 12:46:27,386 - aiogram.event - INFO - Update id=945620105 is not handled. Duration 0 ms by bot id=6987896318
+2024-05-14 12:46:27,387 - aiogram.event - ERROR - Cause exception while process update id=945620105 by bot id=6987896318
+UnboundLocalError: local variable 'result' referenced before assignment
+Traceback (most recent call last):
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 49, in __call__
+    return await handler(event, data)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/artemiy/name_translit_bot/name_translit_bot.py", line 114, in translit_fio
+    translit_fio = transliterate_fio(fio)  # Транслитерация ФИО
+  File "/home/artemiy/name_translit_bot/name_translit_bot.py", line 104, in transliterate_fio
+    result += translit_rules[char]
+UnboundLocalError: local variable 'result' referenced before assignment
+2024-05-14 12:46:42,416 - aiogram.event - INFO - Update id=945620106 is not handled. Duration 0 ms by bot id=6987896318
+2024-05-14 12:46:42,417 - aiogram.event - ERROR - Cause exception while process update id=945620106 by bot id=6987896318
+UnboundLocalError: local variable 'result' referenced before assignment
+Traceback (most recent call last):
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 49, in __call__
+    return await handler(event, data)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/artemiy/name_translit_bot/name_translit_bot.py", line 114, in translit_fio
+    translit_fio = transliterate_fio(fio)  # Транслитерация ФИО
+  File "/home/artemiy/name_translit_bot/name_translit_bot.py", line 104, in transliterate_fio
+    result += translit_rules[char]
+UnboundLocalError: local variable 'result' referenced before assignment
+2024-05-14 12:51:43,613 - aiogram.event - INFO - Update id=945620107 is handled. Duration 475 ms by bot id=6987896318
+2024-05-14 12:51:58,128 - aiogram.event - INFO - Update id=945620108 is not handled. Duration 0 ms by bot id=6987896318
+2024-05-14 12:51:58,128 - aiogram.event - ERROR - Cause exception while process update id=945620108 by bot id=6987896318
+UnboundLocalError: local variable 'result' referenced before assignment
+Traceback (most recent call last):
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 49, in __call__
+    return await handler(event, data)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/artemiy/name_translit_bot/name_translit_bot.py", line 114, in translit_fio
+    fio = message.text  # ФИО от пользователя
+  File "/home/artemiy/name_translit_bot/name_translit_bot.py", line 104, in transliterate_fio
+    if char in translit_rules:
+UnboundLocalError: local variable 'result' referenced before assignment
+2024-05-14 12:52:10,246 - aiogram.event - INFO - Update id=945620109 is not handled. Duration 0 ms by bot id=6987896318
+2024-05-14 12:52:10,246 - aiogram.event - ERROR - Cause exception while process update id=945620109 by bot id=6987896318
+UnboundLocalError: local variable 'result' referenced before assignment
+Traceback (most recent call last):
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 49, in __call__
+    return await handler(event, data)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/artemiy/name_translit_bot/venv/lib/pypy3.9/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/artemiy/name_translit_bot/name_translit_bot.py", line 114, in translit_fio
+    fio = message.text  # ФИО от пользователя
+  File "/home/artemiy/name_translit_bot/name_translit_bot.py", line 104, in transliterate_fio
+    if char in translit_rules:
+UnboundLocalError: local variable 'result' referenced before assignment
+2024-05-14 18:04:27,894 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2024-05-14 18:04:27,894 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6987896318)
+2024-05-14 18:04:39,270 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 6987896318)
+2024-05-14 18:05:50,986 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2024-05-14 18:05:50,987 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6987896318)
+2024-05-14 18:06:02,452 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 6987896318)
+2024-05-14 18:07:45,156 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2024-05-14 18:07:45,156 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6987896318)
+2024-05-14 18:07:56,724 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 6987896318)
+2024-05-14 18:09:18,226 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2024-05-14 18:09:18,226 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6987896318)
+2024-05-14 18:09:29,575 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 6987896318)
+2024-05-14 18:10:51,106 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2024-05-14 18:10:51,106 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6987896318)
+2024-05-14 18:11:02,496 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 6987896318)
+2024-05-14 18:12:44,664 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2024-05-14 18:12:44,664 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6987896318)
+2024-05-14 18:12:56,334 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 6987896318)
+2024-05-14 18:13:57,213 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2024-05-14 18:13:57,213 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6987896318)
+2024-05-14 18:14:08,547 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 6987896318)
+2024-05-14 18:14:08,550 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2024-05-14 18:14:08,550 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6987896318)
+2024-05-14 18:14:19,892 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 6987896318)
+2024-05-14 18:16:21,337 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2024-05-14 18:16:21,337 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6987896318)
+2024-05-14 18:16:33,072 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 6987896318)
+2024-05-14 18:16:33,094 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2024-05-14 18:16:33,094 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6987896318)
+2024-05-14 18:16:44,681 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 6987896318)
+2024-05-14 18:51:21,152 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2024-05-14 18:51:21,152 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6987896318)
+2024-05-14 18:51:32,684 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 6987896318)
+2024-05-14 18:59:31,908 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2024-05-14 18:59:31,908 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6987896318)
+2024-05-14 18:59:43,240 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 6987896318)
+2024-05-14 19:05:07,832 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2024-05-14 19:05:07,833 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6987896318)
+2024-05-14 19:05:19,503 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 6987896318)
+2024-05-14 19:11:06,013 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [Errno 104] Connection reset by peer
+2024-05-14 19:11:06,014 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6987896318)
+2024-05-14 19:11:17,906 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 6987896318)
+2024-05-14 19:14:01,031 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2024-05-14 19:14:01,031 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6987896318)
+2024-05-14 19:14:12,591 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 6987896318)
+2024-05-14 19:22:40,822 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2024-05-14 19:22:40,823 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6987896318)
+2024-05-14 19:22:52,310 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 6987896318)
+2024-05-14 19:33:24,104 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2024-05-14 19:33:24,105 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6987896318)
+2024-05-14 19:33:35,506 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 6987896318)
+2024-05-14 19:33:35,509 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2024-05-14 19:33:35,510 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6987896318)
+2024-05-14 19:33:46,831 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 6987896318)
+2024-05-14 19:41:14,431 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2024-05-14 19:41:14,432 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6987896318)
+2024-05-14 19:41:25,897 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 6987896318)
+2024-05-14 19:41:25,900 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2024-05-14 19:41:25,907 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6987896318)
+2024-05-14 19:41:37,469 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 6987896318)
+2024-05-14 19:53:00,695 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2024-05-14 19:53:00,695 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6987896318)
+2024-05-14 19:53:12,571 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 6987896318)
+2024-05-15 22:09:13,531 - aiogram.dispatcher - INFO - Start polling
+2024-05-15 22:09:13,873 - aiogram.dispatcher - INFO - Run polling for bot @name_translit_bot id=6987896318 - 'Name Translit bot'
+2024-05-15 22:09:29,499 - aiogram.event - INFO - Update id=945620110 is handled. Duration 346 ms by bot id=6987896318
+2024-05-15 22:09:31,944 - root - INFO - Пользователь R2DDooDoo отправил ФИО: saqa, транслитерация:  saqa
+2024-05-15 22:09:31,944 - aiogram.event - INFO - Update id=945620111 is handled. Duration 127 ms by bot id=6987896318
+2024-05-15 22:09:35,002 - root - INFO - Пользователь R2DDooDoo отправил ФИО: При, транслитерация:  Pri
+2024-05-15 22:09:35,002 - aiogram.event - INFO - Update id=945620112 is handled. Duration 110 ms by bot id=6987896318
+2024-05-15 22:09:40,859 - root - INFO - Пользователь R2DDooDoo отправил ФИО: Привет Как дела, транслитерация:  Privet Kak dela
+2024-05-15 22:09:40,859 - aiogram.event - INFO - Update id=945620113 is handled. Duration 118 ms by bot id=6987896318
+2024-05-15 22:09:53,405 - root - INFO - Пользователь R2DDooDoo отправил ФИО: Аверченков Артемий Игоревич, транслитерация:  Averchenkov Artemii Igorevich
+2024-05-15 22:09:53,406 - aiogram.event - INFO - Update id=945620114 is handled. Duration 133 ms by bot id=6987896318
+2024-05-15 22:31:03,549 - aiogram.dispatcher - INFO - Start polling
+2024-05-15 22:31:03,894 - aiogram.dispatcher - INFO - Run polling for bot @name_translit_bot id=6987896318 - 'Name Translit bot'
+2024-05-15 22:31:38,342 - root - INFO - Пользователь R2DDooDoo отправил ФИО: sgg, транслитерация:  sgg
+2024-05-15 22:31:38,342 - aiogram.event - INFO - Update id=945620115 is handled. Duration 414 ms by bot id=6987896318
+2024-05-15 22:35:12,505 - root - INFO - Пользователь R2DDooDoo отправил ФИО: ❯ conda env list
+# conda environments:
+#
+base                     /home/artemiy/miniforge-pypy3
+name_translit_bot     *  /home/artemiy/miniforge-pypy3/envs/name_translit_bot
+streamlit_project        /home/artemiy/miniforge-pypy3/envs/streamlit_project, транслитерация:  ❯ conda env list
+# conda environments:
+#
+base                     /home/artemiy/miniforge-pypy3
+name_translit_bot     *  /home/artemiy/miniforge-pypy3/envs/name_translit_bot
+streamlit_project        /home/artemiy/miniforge-pypy3/envs/streamlit_project
+2024-05-15 22:35:12,505 - aiogram.event - INFO - Update id=945620116 is handled. Duration 536 ms by bot id=6987896318

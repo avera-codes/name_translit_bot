@@ -14,4 +14,4 @@ COPY . .
 ENV TOKEN='6987896318:AAE6HKLmd-uKVyo9h7_NHIhVq5wo35qzLug'
 
 # Устанавливаем точку входа
-ENTRYPOINT ["python", "bot.py"]
+ENTRYPOINT ["python", "name_translit_bot.py"]
